@@ -1,3 +1,4 @@
+//Samenwerking met Viktor
 
 void setup() {
   pinMode(1, OUTPUT);
@@ -11,7 +12,7 @@ void setup() {
 }
 
 void loop() {
-
+//de for loop voor het heen gaan van de leds
   for(int i = 0; i < 8; i++){
     int ledPinLow = i + 1;
     int ledPinHigh = i + 2;
@@ -19,7 +20,7 @@ void loop() {
     digitalWrite(ledPinHigh, HIGH);
     delay(100);
   }
-
+//de for loop voor het aflopen van de leds
   for(int i = 6; i > -1; i--){
     int ledPinLow = i + 2;
     int ledPinHigh = i + 1;
