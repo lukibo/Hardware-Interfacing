@@ -11,13 +11,13 @@ int ledPin8 = 8;
 
 void setup() {
   pinMode(potPin, INPUT);
-  pinMode(ledPin2, INPUT);
-  pinMode(ledPin3, INPUT);
-  pinMode(ledPin4, INPUT);
-  pinMode(ledPin5, INPUT);
-  pinMode(ledPin6, INPUT);
-  pinMode(ledPin7, INPUT);
-  pinMode(ledPin8, INPUT);
+  pinMode(ledPin2, OUTPUT);
+  pinMode(ledPin3, OUTPUT);
+  pinMode(ledPin4, OUTPUT);
+  pinMode(ledPin5, OUTPUT);
+  pinMode(ledPin6, OUTPUT);
+  pinMode(ledPin7, OUTPUT);
+  pinMode(ledPin8, OUTPUT);
 }
 
 void loop() {
