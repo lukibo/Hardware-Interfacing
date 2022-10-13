@@ -34,11 +34,10 @@ void loop() {
   if(lastButtonState1 == HIGH && currentButtonState1 == LOW){
     btn2 = true;
   }
-
   if (lastButtonState2 == HIGH && currentButtonState2 == LOW){
     btn12= true;
   }
-  
+  //dit is voor de snelle draai als je een knop in drukt
   if(btn2 == false && btn12 == true){
 	for(int pos = 0; pos <= 120; pos += 24){
      myservo.write(pos);
@@ -49,6 +48,7 @@ void loop() {
      delay(100);
     }
   }
+  //dit is voor de standaard draai als je een knop in drukt
   if(btn2 == true && btn12 == false){
  	for(int pos = 0; pos <= 120; pos += 12){
      myservo.write(pos);
@@ -59,6 +59,7 @@ void loop() {
      delay(100);
     }
   }
+  //dit is voor het draaien als je beide knoppen in drukt
   if(btn2 == true && btn12 == true){
 	for(int pos = 0; pos <= 120; pos += 12){
      myservo.write(pos);
